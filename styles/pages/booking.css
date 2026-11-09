@@ -1,0 +1,481 @@
+.bk-wrapper {
+    max-width: 680px;
+    margin: 24px auto 110px;
+    padding: 0 20px;
+}
+
+.bk-kembali {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #ED2A5C;
+    font-size: 14px;
+}
+
+.bk-judul {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.bk-ringkasan {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background-color: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.bk-avatar {
+    flex: 0 0 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #ED2A5C;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bk-dokter {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.bk-spesialis {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.bk-waktu {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #D01E4C;
+}
+
+.bk-slot-error {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.bk-slot-error a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.bk-kartu {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.bk-kartu h2 {
+    font-size: 15px;
+    color: #1f2937;
+    margin-bottom: 14px;
+}
+
+.bk-grup {
+    margin-bottom: 14px;
+}
+
+.bk-grup-kecil {
+    max-width: 180px;
+}
+
+.bk-grup label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.bk-grup input,
+.bk-grup textarea {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: white;
+    color: #1f2937;
+}
+
+.bk-grup textarea {
+    resize: vertical;
+}
+
+.bk-grup input:focus,
+.bk-grup textarea:focus {
+    outline: 3px solid #f7a1b8;
+    border-color: #ED2A5C;
+}
+
+.bk-grup .salah {
+    border-color: #dc2626;
+}
+
+.bk-err {
+    min-height: 18px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #dc2626;
+}
+
+.bk-baris-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.bk-hitung {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+
+.bk-opsi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.bk-opsi-grid.bk-tiga {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bk-opsi {
+    position: relative;
+    cursor: pointer;
+}
+
+.bk-opsi input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    cursor: pointer;
+}
+
+.bk-opsi-isi {
+    display: block;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: white;
+    height: 100%;
+}
+
+.bk-opsi-isi strong {
+    display: block;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.bk-opsi-isi small {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.bk-opsi input:checked + .bk-opsi-isi {
+    border-color: #ED2A5C;
+    background-color: #fff1f2;
+    box-shadow: 0 0 0 1px #ED2A5C;
+}
+
+.bk-opsi input:focus-visible + .bk-opsi-isi {
+    outline: 3px solid #f7a1b8;
+    outline-offset: 2px;
+}
+
+/* ---------- rincian biaya ---------- */
+.bk-rincian {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed #d1d5db;
+}
+
+.bk-rincian div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #4b5563;
+    padding: 3px 0;
+}
+
+.bk-rincian .bk-total {
+    margin-top: 6px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.bk-tombol {
+    display: inline-block;
+    background-color: #ED2A5C;
+    color: white;
+    border: 1px solid #ED2A5C;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bk-tombol:hover {
+    background-color: #D01E4C;
+}
+
+.bk-tombol:focus-visible,
+.bk-link-bahaya:focus-visible {
+    outline: 3px solid #f7a1b8;
+    outline-offset: 2px;
+}
+
+.bk-tombol:disabled {
+    background-color: #f6a5b9;
+    border-color: #f6a5b9;
+    cursor: not-allowed;
+}
+
+.bk-penuh {
+    width: 100%;
+}
+
+.bk-garis {
+    background-color: white;
+    color: #ED2A5C;
+}
+
+.bk-garis:hover {
+    background-color: #fff1f2;
+}
+
+.bk-bahaya {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+.bk-bahaya:hover {
+    background-color: #b91c1c;
+}
+
+.bk-kosong {
+    text-align: center;
+    padding: 48px 0;
+}
+
+.bk-kosong h1 {
+    font-size: 22px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.bk-kosong p {
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.bk-sukses-kepala {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bk-centang {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: #16a34a;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bk-muncul 0.35s ease-out;
+}
+
+@keyframes bk-muncul {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.bk-sukses-kepala .bk-judul {
+    margin-bottom: 4px;
+}
+
+.bk-sub {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.bk-tiket {
+    position: relative;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.bk-tiket-atas {
+    padding: 22px 20px 18px;
+    text-align: center;
+}
+
+.bk-label {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.bk-kode {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #1f2937;
+    margin: 2px 0 8px;
+}
+
+.bk-status {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #15803d;
+    border-radius: 999px;
+    padding: 3px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bk-status.batal {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.bk-tiket-garis {
+    position: relative;
+    border-top: 2px dashed #d1d5db;
+    margin: 0 18px;
+}
+
+.bk-tiket-garis::before,
+.bk-tiket-garis::after {
+    content: "";
+    position: absolute;
+    top: -11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F7F8FC;
+    border: 1px solid #e5e7eb;
+}
+
+.bk-tiket-garis::before { left: -29px; }
+.bk-tiket-garis::after { right: -29px; }
+
+.bk-tiket-bawah {
+    padding: 18px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 20px;
+}
+
+.bk-tiket-bawah dt {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.bk-tiket-bawah dd {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.bk-tiket.dibatalkan {
+    opacity: 0.6;
+}
+
+.bk-info {
+    background-color: #fff1f2;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #1f2937;
+    margin-bottom: 14px;
+}
+
+.bk-aksi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bk-aksi .bk-tombol {
+    flex: 1 1 160px;
+}
+
+.bk-batal {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bk-link-bahaya {
+    background: none;
+    border: none;
+    color: #dc2626;
+    font-size: 13px;
+    font-family: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bk-konfirmasi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.bk-konfirmasi p {
+    width: 100%;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 520px) {
+    .bk-opsi-grid.bk-tiga {
+        grid-template-columns: 1fr;
+    }
+
+    .bk-tiket-bawah {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bk-centang {
+        animation: none;
+    }
+}

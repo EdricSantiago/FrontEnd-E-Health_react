@@ -1,69 +1,235 @@
-import Image from "next/image";
+"use client";
+import { HomeEffects } from "@/components/HomeEffects";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+    <>
+      <main className="hd-main">
+        <section className="hd-hero">
+          <div className="hd-hero-inner">
+            <div className="hd-hero-text">
+              <p className="hd-hero-greeting" id="hd-greeting">
+                Selamat Datang
+              </p>
+              <h1>Kesehatan Dimulai dari Sini</h1>
+              <p className="hd-hero-sub">
+                Konsultasi dokter, beli obat, dan cek kesehatan dalam satu
+                aplikasi.
+              </p>
+              <div className="hd-hero-actions">
+                <a href="/layanan/kulit" className="hd-btn-primary">
+                  Chat Dokter
+                </a>
+                <a href="/toko" className="hd-btn-outline">
+                  Beli Obat
+                </a>
+                <a href="/layanan/bmi" className="hd-btn-outline">
+                  Cek BMI
+                </a>
+              </div>
+            </div>
+            <div className="hd-hero-visual">
+              <img src="/assets/images/hero.jpg" alt="Ilustrasi kesehatan" />
+            </div>
+          </div>
+        </section>
+        <section className="hd-search-section">
+          <div className="hd-search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Cari dokter, obat, atau layanan"
             />
-            Deploy Now
+          </div>
+        </section>
+        <section className="hd-banner-carousel">
+          <div className="hd-banner-track" id="banner-track">
+            <a href="/layanan/kulit" className="hd-banner-slide active">
+              <img src="/assets/images/banner1.jpg" alt="Promo chat dokter" />
+            </a>
+            <a href="/toko" className="hd-banner-slide">
+              <img src="/assets/images/banner2.jpg" alt="Promo toko obat" />
+            </a>
+            <a href="/layanan/bmi" className="hd-banner-slide">
+              <img src="/assets/images/banner3.jpg" alt="Promo cek BMI" />
+            </a>
+          </div>
+          <div className="hd-banner-dots" id="banner-dots">
+            <span className="hd-dot active" data-index="0"></span>
+            <span className="hd-dot" data-index="1"></span>
+            <span className="hd-dot" data-index="2"></span>
+          </div>
+        </section>
+        <section className="hd-services">
+          <h2>Layanan Kesehatan</h2>
+          <a href="/layanan" className="hd-see-all">
+            Lihat Semua
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <div className="hd-service-grid" id="menu-grid">
+            <a href="/dokter" className="hd-svc">
+              <i className="fa-solid fa-calendar-check"></i>
+              <span>Booking Dokter</span>
+            </a>
+            <a href="/toko" className="hd-svc">
+              <i className="fa-solid fa-pills"></i>
+              <span>Toko Obat</span>
+            </a>
+            <a href="/layanan/bmi" className="hd-svc">
+              <i className="fa-solid fa-weight-scale"></i>
+              <span>Kalkulator BMI</span>
+            </a>
+            <a href="/layanan/kulit" className="hd-svc">
+              <i className="fa-solid fa-hand-dots"></i>
+              <span>Kesehatan Kulit</span>
+            </a>
+            <a href="/layanan/hewan" className="hd-svc">
+              <i className="fa-solid fa-paw"></i>
+              <span>Hewan Peliharaan</span>
+            </a>
+            <a href="/layanan/kulit/info" className="hd-svc">
+              <i className="fa-solid fa-circle-info"></i>
+              <span>Info Kesehatan</span>
+            </a>
+            <a href="/layanan/asuransi" className="hd-svc">
+              <i className="fa-solid fa-shield-heart"></i>
+              <span>Asuransi</span>
+            </a>
+          </div>
+        </section>
+        <section className="hd-doctors">
+          <div className="hd-section-head">
+            <h2>Dokter Rekomendasi</h2>
+            <a href="/dokter" className="hd-see-all">
+              Lihat Semua
+            </a>
+          </div>
+          <div className="hd-doctor-list">
+            <div className="hd-doc-card">
+              <span className="hd-doc-status">● Online</span>
+              <img
+                src="/assets/images/doctors/andini.jpg"
+                alt="dr. Andini Putri"
+                className="hd-doc-avatar"
+              />
+              <h3>dr. Andini Putri</h3>
+              <p className="hd-doc-spec">Dokter Kulit</p>
+              <div className="hd-doc-info">
+                <span className="hd-doc-rating">★ 4.9</span>
+                <span className="hd-doc-exp">8 thn</span>
+              </div>
+              <a
+                href="/dokter/chat?doctor=dr.%20Andini%20Putri&specialist=Dokter%20Kulit"
+                className="hd-doc-btn"
+              >
+                Chat Dokter
+              </a>
+            </div>
+            <div className="hd-doc-card">
+              <span className="hd-doc-status">● Online</span>
+              <img
+                src="/assets/images/doctors/raka.jpg"
+                alt="dr. Raka Pratama"
+                className="hd-doc-avatar"
+              />
+              <h3>dr. Raka Pratama</h3>
+              <p className="hd-doc-spec">Dokter Umum</p>
+              <div className="hd-doc-info">
+                <span className="hd-doc-rating">★ 4.8</span>
+                <span className="hd-doc-exp">5 thn</span>
+              </div>
+              <a
+                href="/dokter/chat?doctor=dr.%20Raka%20Pratama&specialist=Dokter%20Umum"
+                className="hd-doc-btn"
+              >
+                Chat Dokter
+              </a>
+            </div>
+            <div className="hd-doc-card">
+              <span className="hd-doc-status">● Online</span>
+              <img
+                src="/assets/images/doctors/citra.jpg"
+                alt="dr. Citra Lestari"
+                className="hd-doc-avatar"
+              />
+              <h3>dr. Citra Lestari</h3>
+              <p className="hd-doc-spec">Dokter Anak</p>
+              <div className="hd-doc-info">
+                <span className="hd-doc-rating">★ 4.9</span>
+                <span className="hd-doc-exp">10 thn</span>
+              </div>
+              <a
+                href="/dokter/chat?doctor=dr.%20Citra%20Lestari&specialist=Dokter%20Anak"
+                className="hd-doc-btn"
+              >
+                Chat Dokter
+              </a>
+            </div>
+            <div className="hd-doc-card">
+              <span className="hd-doc-status hd-offline">● Sibuk</span>
+              <img
+                src="/assets/images/doctors/budi.jpg"
+                alt="dr. Budi Santoso"
+                className="hd-doc-avatar"
+              />
+              <h3>dr. Budi Santoso</h3>
+              <p className="hd-doc-spec">Dokter Gigi</p>
+              <div className="hd-doc-info">
+                <span className="hd-doc-rating">★ 4.7</span>
+                <span className="hd-doc-exp">12 thn</span>
+              </div>
+              <span className="hd-doc-btn hd-btn-off">Tidak Tersedia</span>
+            </div>
+          </div>
+        </section>
+        <section className="hd-articles">
+          <h2>Artikel Kesehatan</h2>
+          <div className="hd-article-grid">
+            <a href="/layanan/kulit/info" className="hd-article">
+              <img
+                src="/assets/images/articles/artikel1.jpg"
+                alt=""
+                className="hd-article-img"
+              />
+              <div className="hd-article-body">
+                <h3>5 Tips Menjaga Daya Tahan Tubuh</h3>
+                <p>
+                  Pelajari cara menjaga imun tubuh agar tetap kuat setiap hari.
+                </p>
+                <span className="hd-article-meta">2 Okt 2026</span>
+              </div>
+            </a>
+            <a href="/toko" className="hd-article">
+              <img
+                src="/assets/images/articles/artikel2.jpg"
+                alt=""
+                className="hd-article-img"
+              />
+              <div className="hd-article-body">
+                <h3>Panduan Memilih Vitamin yang Tepat</h3>
+                <p>
+                  Kenali kebutuhan vitamin harianmu dan cara memilih suplemen.
+                </p>
+                <span className="hd-article-meta">1 Okt 2026</span>
+              </div>
+            </a>
+            <a href="/layanan/bmi" className="hd-article">
+              <img
+                src="/assets/images/articles/artikel3.jpg"
+                alt=""
+                className="hd-article-img"
+              />
+              <div className="hd-article-body">
+                <h3>Olahraga Ringan untuk Kesehatan</h3>
+                <p>Aktivitas fisik sederhana yang bisa meningkatkan mood.</p>
+                <span className="hd-article-meta">30 Sep 2026</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <div className="hd-spacer"></div>
       </main>
-    </div>
+      <div id="bottom-nav-container"></div>
+      <HomeEffects />
+    </>
   );
 }
