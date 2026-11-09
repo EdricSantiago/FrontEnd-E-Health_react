@@ -1,0 +1,85 @@
+
+.container {
+    padding: 40px 7%;
+    background-color: #f9fafe;
+    min-height: 100vh;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #263b59;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #718096;
+    font-size: 15px;
+}
+
+.search {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #dce5ef;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.search:focus {
+    border-color: #2f80ed;
+}
+
+.sectionTitle {
+    color: #263b59;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.specialty {
+    padding: 12px 20px;
+    border: 1px solid #dce5ef;
+    border-radius: 10px;
+    background-color: white;
+    color: #52647a;
+    cursor: pointer;
+}
+
+.specialty:hover {
+    background-color: #eaf3ff;
+    color: #2f80ed;
+}
+
+.doctorList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 5%;
+    }
+
+    .doctorList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .doctorList {
+        grid-template-columns: 1fr;
+    }
+}
