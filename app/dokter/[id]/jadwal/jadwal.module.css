@@ -1,0 +1,528 @@
+
+.container {
+    min-height: 100vh;
+    padding: 35px 7% 60px;
+    background-color: #f5f8fd;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: #8996a8;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: #2f80ed;
+    text-decoration: none;
+}
+
+/* Header */
+.pageHeader {
+    margin-bottom: 25px;
+}
+
+.headerBadge {
+    display: inline-block;
+    padding: 7px 13px;
+    color: #2f80ed;
+    background-color: #e8f2ff;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pageHeader h1 {
+    margin: 13px 0 8px;
+    color: #263b59;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pageHeader p {
+    color: #8795a9;
+    font-size: 14px;
+}
+
+/* Doctor Profile */
+.doctorCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 30px;
+    background-color: white;
+    border: 1px solid #e6edf5;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(30, 70, 120, 0.04);
+}
+
+.doctorProfile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.doctorImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.doctorBadge {
+    display: inline-block;
+    padding: 5px 11px;
+    color: #2f80ed;
+    background-color: #edf5ff;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.doctorProfile h2 {
+    margin: 8px 0 5px;
+    color: #263b59;
+    font-size: 20px;
+}
+
+.doctorProfile p {
+    margin-bottom: 5px;
+    color: #718096;
+    font-size: 13px;
+}
+
+.doctorRating {
+    color: #d99a23;
+    font-size: 12px;
+}
+
+.doctorPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 25px;
+    border-left: 1px solid #e8edf4;
+}
+
+.doctorPrice span {
+    color: #8795a9;
+    font-size: 12px;
+}
+
+.doctorPrice strong {
+    color: #2f80ed;
+    font-size: 22px;
+}
+
+/* Main Layout */
+.scheduleLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+    gap: 22px;
+    align-items: start;
+    margin-top: 25px;
+}
+
+.scheduleMain {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.scheduleCard {
+    padding: 27px;
+    background-color: white;
+    border: 1px solid #e6edf5;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(30, 70, 120, 0.03);
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 25px;
+}
+
+.titleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: #edf5ff;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.sectionTitle h2 {
+    margin-bottom: 5px;
+    color: #263b59;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sectionTitle p {
+    margin: 0;
+    color: #8795a9;
+    font-size: 12px;
+}
+
+/* Date */
+.dateList {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.dateItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 15px 5px;
+    border: 1px solid #e1e9f2;
+    border-radius: 11px;
+    background-color: white;
+    color: #718096;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dateItem strong {
+    color: #263b59;
+    font-size: 22px;
+}
+
+.dateItem span {
+    font-size: 11px;
+}
+
+.dateItem:hover {
+    border-color: #2f80ed;
+}
+
+.dateActive {
+    background-color: #2f80ed;
+    border-color: #2f80ed;
+    color: white;
+}
+
+.dateActive strong {
+    color: white;
+}
+
+.dateActive span {
+    color: white;
+}
+
+.dateNote {
+    margin-top: 17px;
+    color: #8795a9;
+    font-size: 12px;
+}
+
+/* Time */
+.selectDateMessage {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #f6f9fd;
+    border-radius: 10px;
+}
+
+.selectDateMessage span {
+    font-size: 30px;
+}
+
+.selectDateMessage p {
+    margin-top: 10px;
+    color: #8795a9;
+    font-size: 13px;
+}
+
+.sessions {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.session h3 {
+    margin-bottom: 13px;
+    color: #263b59;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.timeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.timeItem {
+    min-width: 90px;
+    padding: 12px 18px;
+    border: 1px solid #dce6f2;
+    border-radius: 9px;
+    background-color: white;
+    color: #52647a;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.timeItem:hover {
+    color: #2f80ed;
+    border-color: #2f80ed;
+    background-color: #f0f6ff;
+}
+
+.timeActive {
+    color: white;
+    background-color: #2f80ed;
+    border-color: #2f80ed;
+}
+
+/* Notice */
+.notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 20px;
+    background-color: #eaf3ff;
+    border-radius: 12px;
+}
+
+.notice > span {
+    font-size: 20px;
+}
+
+.notice strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #263b59;
+    font-size: 13px;
+}
+
+.notice p {
+    margin: 0;
+    color: #718096;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Summary */
+.summaryCard {
+    position: sticky;
+    top: 25px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e6edf5;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(30, 70, 120, 0.05);
+}
+
+.summaryCard h2 {
+    color: #263b59;
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.summarySubtitle {
+    color: #8795a9;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.summaryDoctor {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.summaryDoctor strong {
+    color: #263b59;
+    font-size: 14px;
+}
+
+.summaryDoctor span {
+    color: #2f80ed;
+    font-size: 12px;
+}
+
+.summaryDivider {
+    height: 1px;
+    margin: 18px 0;
+    background-color: #edf1f6;
+}
+
+.summaryRow {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 17px;
+}
+
+.summaryRow span {
+    color: #8795a9;
+    font-size: 12px;
+}
+
+.summaryRow strong {
+    color: #263b59;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.totalPrice span {
+    color: #718096;
+    font-size: 13px;
+}
+
+.totalPrice strong {
+    color: #2f80ed;
+    font-size: 19px;
+}
+
+.confirmButton {
+    width: 100%;
+    margin-top: 23px;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background-color: #2f80ed;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.confirmButton:hover {
+    background-color: #1769d2;
+}
+
+.successMessage {
+    margin-top: 15px;
+    padding: 13px;
+    background-color: #e8f8f1;
+    border-radius: 9px;
+    color: #16845b;
+}
+
+.successMessage strong {
+    font-size: 13px;
+}
+
+.successMessage p {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.summaryNote {
+    margin-top: 17px;
+    color: #9aa6b5;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.backButton {
+    display: inline-block;
+    margin-top: 25px;
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.notFound {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.notFound a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2f80ed;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .scheduleLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .summaryCard {
+        position: static;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 25px 5% 45px;
+    }
+
+    .pageHeader h1 {
+        font-size: 24px;
+    }
+
+    .doctorCard {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .doctorProfile {
+        gap: 13px;
+    }
+
+    .doctorImage {
+        width: 75px;
+        height: 75px;
+    }
+
+    .doctorProfile h2 {
+        font-size: 16px;
+    }
+
+    .doctorPrice {
+        width: 100%;
+        padding: 15px 0 0;
+        border-left: none;
+        border-top: 1px solid #e8edf4;
+    }
+
+    .scheduleCard {
+        padding: 20px 15px;
+    }
+
+    .dateList {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .dateItem {
+        padding: 12px 4px;
+    }
+
+    .timeItem {
+        min-width: 75px;
+        padding: 11px 13px;
+    }
+}
