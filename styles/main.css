@@ -8,5 +8,9 @@
 @import url('components/button.css');
 @import url('components/product_card.css');
 
+
 @import url('pages/login.css');
 @import url('pages/bmi.css');
+@import url('pages/profile.css');
+@import url('pages/riwayat.css');
+@import url('pages/pengaturan.css')

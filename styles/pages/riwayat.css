@@ -1,0 +1,104 @@
+.riwayat-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.riwayat-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 20px;
+}
+
+.riwayat-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.tab-chip {
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    color: #64748b;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tab-chip.active {
+    background-color: #ED2A5C;
+    border-color: #ED2A5C;
+    color: #fff;
+}
+
+.riwayat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.riwayat-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.riwayat-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #fce7f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.riwayat-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.riwayat-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.riwayat-desc {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.riwayat-status {
+    font-size: 11px;
+    font-weight: 700;
+    color: #15803d;
+    background-color: #dcfce7;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.riwayat-kosong {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+    padding: 40px 0;
+}
