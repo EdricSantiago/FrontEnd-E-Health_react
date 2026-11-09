@@ -1,0 +1,255 @@
+
+.container {
+    min-height: 100vh;
+    background-color: #f5f8fd;
+    padding: 35px 7%;
+}
+
+.content {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #8996a8;
+}
+
+.breadcrumb a {
+    color: #2f80ed;
+    text-decoration: none;
+}
+
+.profileCard {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(30, 70, 120, 0.06);
+}
+
+.profileImage img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 15px;
+    color: #2f80ed;
+    background-color: #eaf3ff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profileInfo h1 {
+    margin: 15px 0 10px;
+    color: #263b59;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hospital {
+    color: #718096;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #263b59;
+}
+
+.ratingText {
+    color: #8996a8;
+    font-size: 13px;
+}
+
+.profileStats {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.profileStats div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profileStats strong {
+    color: #263b59;
+    font-size: 18px;
+}
+
+.profileStats span {
+    color: #8996a8;
+    font-size: 13px;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.infoCard,
+.bookingCard {
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(30, 70, 120, 0.05);
+}
+
+.infoCard h2 {
+    color: #263b59;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infoIcon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf5ff;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.infoItem div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.infoItem span {
+    color: #8996a8;
+    font-size: 13px;
+}
+
+.infoItem strong {
+    color: #263b59;
+    font-size: 14px;
+}
+
+.bookingCard {
+    height: fit-content;
+    border: 1px solid #e7eff9;
+}
+
+.bookingLabel {
+    color: #8996a8;
+    font-size: 14px;
+}
+
+.bookingCard h2 {
+    color: #2f80ed;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.bookingCard p {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.bookingButton {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 9px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.bookingButton:hover {
+    background-color: #1769d2;
+}
+
+.bookingNote {
+    margin-top: 20px;
+    color: #718096;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.backButton {
+    display: inline-block;
+    margin-top: 30px;
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 5%;
+    }
+
+    .profileCard {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+    .profileImage img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profileInfo h1 {
+        font-size: 24px;
+    }
+
+    .profileStats {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .mainContent {
+        grid-template-columns: 1fr;
+    }
+}
