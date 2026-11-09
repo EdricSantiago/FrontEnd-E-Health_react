@@ -1,0 +1,404 @@
+.animal-hero {
+    max-width: 1100px;
+    min-height: 360px;
+    margin: 20px auto 28px;
+    padding: 50px 40px;
+    background: linear-gradient(135deg, #fff1f2 0%, #ffffff 50%, #eff6ff 100%);
+    border: 1px solid #fecdd3;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.animal-hero-text {
+    max-width: 550px;
+}
+
+.animal-hero-text h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--text-dark);
+    margin-bottom: 18px;
+}
+
+.animal-hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.animal-hero-text a {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.animal-hero-text a:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.animal-services {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    text-align: center;
+}
+
+.animal-services h2 {
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.animal-services-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.animal-service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.animal-service-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.animal-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-color: #fecdd3;
+}
+
+.animal-service-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.animal-service-card h3 {
+    font-size: 17px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.animal-service-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.animal-service-card button {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.animal-service-card button:hover {
+    background-color: var(--primary-hover);
+}
+
+.animal-problems {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 24px 50px;
+    text-align: center;
+}
+
+.animal-problems h2 {
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.animal-problems-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.animal-problem-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.animal-problem-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 22px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.animal-problem-icon {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.animal-problem-card h3 {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.animal-problem-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.animal-doctors {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 24px 50px;
+    text-align: center;
+}
+
+.animal-doctors h2 {
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.animal-doctors-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.animal-doctor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.animal-doctor-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.animal-doctor-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.animal-doctor-card h3 {
+    font-size: 17px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.animal-doctor-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.animal-doctor-card span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.animal-doctor-card button {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.animal-doctor-card button:hover {
+    background-color: var(--primary-hover);
+}
+
+.animal-chat {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.animal-chat h1 {
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.animal-chat > p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.animal-chat-box {
+    height: 400px;
+    padding: 20px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.doctor-message,
+.user-message {
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.doctor-message {
+    background-color: #eff6ff;
+}
+
+.user-message {
+    background-color: var(--primary);
+    color: white;
+    margin-left: auto;
+}
+
+.animal-chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+.animal-chat-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.animal-chat-form button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.animal-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 24px;
+}
+
+.animal-info h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.animal-info-text {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.animal-info-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.animal-info-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.animal-info-card h2 {
+    font-size: 19px;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.animal-info-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.animal-back {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 11px 20px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.animal-back:hover {
+    background-color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .animal-info-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .animal-hero {
+        padding: 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .animal-hero-text h1 {
+        font-size: 28px;
+    }
+
+    .animal-service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .animal-problem-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .animal-doctor-list {
+        grid-template-columns: 1fr;
+    }
+}
