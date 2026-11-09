@@ -1,0 +1,251 @@
+.bmi-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 24px 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #334155;
+    font-size: 20px;
+    line-height: 0.8;
+}
+
+.bmi-header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.bmi-banner {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.bmi-banner > div:nth-child(2) {
+    flex: 1;
+}
+
+.bmi-banner-text {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.bmi-banner-link {
+    display: block;
+    text-align: right;
+    color: #ED2A5C;
+    font-weight: 700;
+    font-size: 12.5px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.menu-icon {
+    background-color: #e0f2fe;
+    margin-right: 4px;
+    padding: 0 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon i {
+    font-size: 28px;
+}
+
+.gender-selector {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 36px;
+}
+
+.gender-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.gender-option.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gender-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+#opt-male .gender-avatar i {
+    color: #3b82f6;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#opt-female .gender-avatar i {
+    color: #ec4899;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.gender-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.gender-option.active .gender-label {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.bmi-form-group {
+    margin-bottom: 24px;
+}
+
+.bmi-form-group label {
+    display: block;
+    font-size: 13.5px;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.bmi-input-line {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #cbd5e1;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.bmi-input-line:focus {
+    border-bottom-color: #ED2A5C;
+}
+
+.bmi-result-box {
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #ffe4e6;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.bmi-result-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ED2A5C;
+}
+
+.bmi-result-status {
+    font-size: 16px;
+    font-weight: 700;
+    color: #9f1239;
+    margin-top: 4px;
+}
+
+.btn-hitung {
+    width: 100%;
+    background-color: #e2e8f0;
+    color: #94a3b8;
+    border: none;
+    border-radius: 24px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 32px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-hitung.active {
+    background-color: #ED2A5C;
+    color: #ffffff;
+}
+
+.faq-content {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.faq-content p {
+    margin-bottom: 8px;
+}
+
+.faq-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 24px 0 8px;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.faq-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.faq-list li::before {
+    content: "•";
+    color: #ED2A5C;
+    font-size: 22px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.btn-kembali-faq {
+    width: 100%;
+    background-color: #ED2A5C;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 40px;
+}
